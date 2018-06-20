@@ -22,7 +22,7 @@ $clear.on("click", function() {
 function goGiphy() {
   var input = $search.val();
   // Ajax call to giphy API  
-  $.getJSON("https://api.giphy.com/v1/gifs/translate?api_key=Dg2JFRhOHJeDnkDZ0W48W4r43nuYjXwJ&s=" + input, function(json) {
+  $.getJSON("https://api.giphy.com/v1/gifs/translate?api_key=YOUR API KEY&s=" + input, function(json) {
     data = JSON.parse(JSON.stringify(json));
     imgSrc = data.data.images.original.url;
     $giphy.fadeOut(1000);
